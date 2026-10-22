@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Nur Online Learning offers school classes and competitive exam preparation online.">
+<title>Nur Online Learning | Learn Anywhere</title>
+<style>
+:root{--navy:#102a43;--blue:#2563eb;--teal:#0f766e;--pale:#eff6ff;--ink:#172b4d;--muted:#64748b;--line:#e2e8f0}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f8fafc;line-height:1.55}
+header{background:linear-gradient(120deg,#102a43,#1d4ed8);color:white;padding:16px max(20px,calc((100% - 1120px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.2rem}.brand span{color:#93c5fd}nav{display:flex;gap:14px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:600;font-size:.92rem}
+button,.btn{border:0;border-radius:10px;padding:11px 16px;background:var(--blue);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;font-size:.95rem}
+button:hover,.btn:hover{filter:brightness(.95)}button.secondary{background:#e2e8f0;color:#172b4d}
+.hero{background:linear-gradient(120deg,#dbeafe,#f0fdfa);padding:54px 20px}.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.08;margin:12px 0 18px;color:var(--navy)}.hero p{font-size:1.08rem;color:#334155;max-width:640px}
+.pill{display:inline-block;background:#d1fae5;color:#065f46;border-radius:99px;padding:6px 12px;font-weight:700;font-size:.85rem}
+.hero-card,.panel,.card{background:white;border:1px solid var(--line);border-radius:17px;padding:22px;box-shadow:0 5px 18px #0f172a08}.hero-card{padding:26px}.hero-card .big{font-size:3rem}
+main{max-width:1120px;margin:0 auto;padding:34px 20px}.section-title{margin-bottom:18px}.section-title h2{margin:0;font-size:1.7rem;color:var(--navy)}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.course-icon{font-size:2rem}.card h3{margin:10px 0 5px}.card p{color:var(--muted);margin-top:5px}.tag{font-size:.8rem;background:#eff6ff;color:#1d4ed8;padding:4px 9px;border-radius:20px;display:inline-block}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}label{display:block;font-weight:700;margin:12px 0 5px}input,select{width:100%;padding:12px;border:1px solid #cbd5e1;border-radius:9px;font:inherit;background:white}input:focus,select:focus{outline:2px solid #93c5fd;border-color:#2563eb}
+.status{padding:12px;border-radius:10px;background:#f1f5f9;margin:12px 0}.hidden{display:none!important}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.lesson{border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.notice{font-size:.9rem;background:#fff7ed;color:#9a3412;padding:12px 14px;border-radius:10px;margin-top:14px}.language-bar{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.language-bar label{margin:0}.language-bar select{width:auto;min-width:135px;padding:8px}
+footer{background:#102a43;color:#cbd5e1;padding:26px 20px;text-align:center;margin-top:35px}footer strong{color:white}.small{font-size:.88rem}
+@media(max-width:760px){.hero-inner,.two{grid-template-columns:1fr}.grid{grid-template-columns:1fr}header{align-items:flex-start}.hero{padding-top:38px}.language-bar{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🎓 Nur <span>Online Learning</span></div>
+  <nav><a href="#courses" data-en="Courses" data-hi="कोर्स" data-as="পাঠ্যক্ৰম">Courses</a><a href="#classes" data-en="Live Classes" data-hi="लाइव क्लास" data-as="লাইভ ক্লাছ">Live Classes</a><a href="#account" data-en="Student Login" data-hi="स्टूडेंट लॉगिन" data-as="শিক্ষাৰ্থী লগইন">Student Login</a></nav>
+  <div class="language-bar"><label for="language" data-en="Language:" data-hi="भाषा:" data-as="ভাষা:">Language:</label><select id="language" aria-label="Choose language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="as">অসমীয়া</option></select></div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="pill" data-en="School + Competitive Exam Preparation" data-hi="स्कूल + प्रतियोगी परीक्षा की तैयारी" data-as="বিদ্যালয় + প্ৰতিযোগিতামূলক পৰীক্ষাৰ প্ৰস্তুতি">School + Competitive Exam Preparation</span>
+      <h1 data-en="Learn today. Succeed tomorrow." data-hi="आज सीखें। कल सफल बनें।" data-as="আজি শিকক। কাইলৈ সফল হওক।">Learn today. Succeed tomorrow.</h1>
+      <p data-en="Join online school classes and competitive exam preparation from your phone or computer. Learn with teachers, practise regularly and access study materials from anywhere." data-hi="अपने मोबाइल या कंप्यूटर से स्कूल की ऑनलाइन कक्षाओं और प्रतियोगी परीक्षाओं की तैयारी से जुड़ें। शिक्षकों से सीखें, नियमित अभ्यास करें और कहीं से भी अध्ययन सामग्री प्राप्त करें।" data-as="মোবাইল বা কম্পিউটাৰৰ জৰিয়তে বিদ্যালয়ৰ অনলাইন ক্লাছ আৰু প্ৰতিযোগিতামূলক পৰীক্ষাৰ প্ৰস্তুতিত যোগ দিয়ক। শিক্ষকৰ পৰা শিকক, নিয়মিত অনুশীলন কৰক আৰু যিকোনো ঠাইৰ পৰা অধ্যয়নৰ সামগ্ৰী লাভ কৰক।">Join online school classes and competitive exam preparation from your phone or computer. Learn with teachers, practise regularly and access study materials from anywhere.</p>
+      <div class="actions"><a class="btn" href="#account" data-en="Register as a Student" data-hi="विद्यार्थी के रूप में रजिस्टर करें" data-as="শিক্ষাৰ্থী হিচাপে পঞ্জীয়ন কৰক">Register as a Student</a><a class="btn" style="background:#0f766e" href="#courses" data-en="Explore Courses" data-hi="कोर्स देखें" data-as="পাঠ্যক্ৰম চাওক">Explore Courses</a></div>
+    </div>
+    <div class="hero-card">
+      <div class="big">📚 💻 🌟</div>
+      <h2 data-en="Learning made simple" data-hi="पढ़ाई अब आसान" data-as="শিক্ষা এতিয়া সহজ">Learning made simple</h2>
+      <p class="muted" data-en="Live lessons • Recorded videos • Notes • Practice tests" data-hi="लाइव क्लास • रिकॉर्डेड वीडियो • नोट्स • अभ्यास परीक्षा" data-as="লাইভ পাঠ • ৰেকৰ্ড কৰা ভিডিঅ' • টোকা • অনুশীলনী পৰীক্ষা">Live lessons • Recorded videos • Notes • Practice tests</p>
+      <div class="status" data-en="📱 Mobile-friendly · 🌐 Learn online · 🌱 Start learning" data-hi="📱 मोबाइल के अनुकूल · 🌐 ऑनलाइन पढ़ाई · 🌱 सीखना शुरू करें" data-as="📱 মোবাইল-উপযোগী · 🌐 অনলাইন শিক্ষা · 🌱 শিকা আৰম্ভ কৰক">📱 Mobile-friendly · 🌐 Learn online · 🌱 Start learning</div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section id="courses">
+    <div class="section-title"><h2 data-en="Explore Our Courses" data-hi="हमारे कोर्स देखें" data-as="আমাৰ পাঠ্যক্ৰমসমূহ চাওক">Explore Our Courses</h2><div class="muted" data-en="School learning and exam preparation in one place." data-hi="स्कूल की पढ़ाई और परीक्षा की तैयारी एक ही जगह।" data-as="বিদ্যালয়ৰ শিক্ষা আৰু পৰীক্ষাৰ প্ৰস্তুতি একে ঠাইতে।">School learning and exam preparation in one place.</div></div>
+    <div class="grid">
+      <article class="card"><div class="course-icon">📘</div><span class="tag" data-en="School Classes" data-hi="स्कूल कक्षाएँ" data-as="বিদ্যালয়ৰ ক্লাছ">School Classes</span><h3 data-en="Classes 1–12" data-hi="कक्षा 1–12" data-as="শ্ৰেণী ১–১২">Classes 1–12</h3><p data-en="Subject lessons, homework support and exam revision." data-hi="विषयवार पढ़ाई, होमवर्क में मदद और परीक्षा की तैयारी।" data-as="বিষয়ভিত্তিক পাঠ, ঘৰৰ কামত সহায় আৰু পৰীক্ষাৰ পুনৰালোচনা।">Subject lessons, homework support and exam revision.</p></article>
+      <article class="card"><div class="course-icon">🎯</div><span class="tag" data-en="Competitive Exams" data-hi="प्रतियोगी परीक्षाएँ" data-as="প্ৰতিযোগিতামূলক পৰীক্ষা">Competitive Exams</span><h3 data-en="Exam Preparation" data-hi="परीक्षा की तैयारी" data-as="পৰীক্ষাৰ প্ৰস্তুতি">Exam Preparation</h3><p data-en="Practice questions, mock tests and concept revision." data-hi="अभ्यास प्रश्न, मॉक टेस्ट और विषयों की पुनरावृत्ति।" data-as="অনুশীলনী প্ৰশ্ন, মক টেষ্ট আৰু বিষয়ৰ পুনৰালোচনা।">Practice questions, mock tests and concept revision.</p></article>
+      <article class="card"><div class="course-icon">📝</div><span class="tag" data-en="Study Support" data-hi="अध्ययन सहायता" data-as="অধ্যয়নৰ সহায়">Study Support</span><h3 data-en="Notes & Practice" data-hi="नोट्स और अभ्यास" data-as="টোকা আৰু অনুশীলন">Notes & Practice</h3><p data-en="Downloadable notes, worksheets and learning resources." data-hi="डाउनलोड करने योग्य नोट्स, वर्कशीट और अध्ययन सामग्री।" data-as="ডাউনলোড কৰিব পৰা টোকা, ৱৰ্কশ্বীট আৰু শিক্ষণ সামগ্ৰী।">Downloadable notes, worksheets and learning resources.</p></article>
+    </div>
+  </section>
+
+  <section id="account" style="margin-top:42px">
+    <div class="section-title"><h2 data-en="Student Registration & Login" data-hi="विद्यार्थी रजिस्ट्रेशन और लॉगिन" data-as="শিক্ষাৰ্থীৰ পঞ্জীয়ন আৰু লগইন">Student Registration & Login</h2><div class="muted" data-en="Create an account to access your learning area." data-hi="अपने लर्निंग क्षेत्र तक पहुँचने के लिए अकाउंट बनाएँ।" data-as="আপোনাৰ শিক্ষণ অংশ ব্যৱহাৰ কৰিবলৈ একাউণ্ট সৃষ্টি কৰক।">Create an account to access your learning area.</div></div>
+    <div class="two">
+      <div class="panel">
+        <h3 data-en="Create a Student Account" data-hi="विद्यार्थी अकाउंट बनाएँ" data-as="শিক্ষাৰ্থীৰ একাউণ্ট সৃষ্টি কৰক">Create a Student Account</h3>
+        <form id="registerForm">
+          <label for="regName" data-en="Full name" data-hi="पूरा नाम" data-as="সম্পূৰ্ণ নাম">Full name</label><input id="regName" required maxlength="80" placeholder="Your full name" autocomplete="name">
+          <label for="regEmail" data-en="Email address" data-hi="ईमेल पता" data-as="ইমেইল ঠিকনা">Email address</label><input id="regEmail" type="email" required placeholder="you@example.com" autocomplete="email">
+          <label for="regPassword" data-en="Password (minimum 6 characters)" data-hi="पासवर्ड (कम से कम 6 अक्षर)" data-as="পাছৱৰ্ড (কমেও ৬টা আখৰ)">Password (minimum 6 characters)</label><input id="regPassword" type="password" required minlength="6" placeholder="Create a password" autocomplete="new-password">
+          <button type="submit" style="margin-top:16px;width:100%" data-en="Register Free" data-hi="मुफ़्त रजिस्टर करें" data-as="বিনামূলীয়াকৈ পঞ্জীয়ন কৰক">Register Free</button>
+        </form>
+      </div>
+      <div class="panel">
+        <h3 data-en="Student Login" data-hi="विद्यार्थी लॉगिन" data-as="শিক্ষাৰ্থী লগইন">Student Login</h3>
+        <form id="loginForm">
+          <label for="loginEmail" data-en="Email address" data-hi="ईमेल पता" data-as="ইমেইল ঠিকনা">Email address</label><input id="loginEmail" type="email" required placeholder="you@example.com" autocomplete="email">
+          <label for="loginPassword" data-en="Password" data-hi="पासवर्ड" data-as="পাছৱৰ্ড">Password</label><input id="loginPassword" type="password" required placeholder="Your password" autocomplete="current-password">
+          <button type="submit" style="margin-top:16px;width:100%" data-en="Login" data-hi="लॉगिन करें" data-as="লগইন কৰক">Login</button>
+        </form>
+        <div id="accountStatus" class="status" aria-live="polite">Set up Firebase to enable real student accounts.</div>
+        <div id="studentArea" class="hidden"><h3 id="welcomeName">Welcome!</h3><p class="muted" data-en="You are signed in. See the class links below." data-hi="आप लॉगिन हैं। नीचे क्लास के लिंक देखें।" data-as="আপুনি লগইন কৰিছে। তলত ক্লাছৰ লিংক চাওক।">You are signed in. See the class links below.</p><button id="logoutBtn" class="secondary" data-en="Log out" data-hi="लॉगआउट" data-as="লগআউট কৰক">Log out</button></div>
+      </div>
+    </div>
+    <div class="notice"><strong data-en="One-time setup needed:" data-hi="एक बार सेटअप ज़रूरी है:" data-as="এবাৰ ছেটআপ কৰিব লাগিব:">One-time setup needed:</strong> <span data-en="Real online registration needs your Firebase project settings. Follow README.txt. This starter page does not store accounts until configured." data-hi="वास्तविक ऑनलाइन रजिस्ट्रेशन के लिए Firebase सेटिंग ज़रूरी है। README.txt देखें। सेटअप से पहले यह पेज अकाउंट सेव नहीं करता।" data-as="প্ৰকৃত অনলাইন পঞ্জীয়নৰ বাবে Firebase ছেটিং লাগিব। README.txt চাওক। ছেটআপ নকৰালৈকে এই পৃষ্ঠাই একাউণ্ট সংৰক্ষণ নকৰে।">Real online registration needs your Firebase project settings. Follow README.txt. This starter page does not store accounts until configured.</span></div>
+  </section>
+
+  <section id="classes" style="margin-top:42px">
+    <div class="section-title"><h2 data-en="Live Classes & Learning Resources" data-hi="लाइव क्लास और अध्ययन सामग्री" data-as="লাইভ ক্লাছ আৰু শিক্ষণ সামগ্ৰী">Live Classes & Learning Resources</h2><div class="muted" data-en="Replace sample links with your own class links." data-hi="नमूना लिंक की जगह अपनी क्लास के लिंक डालें।" data-as="নমুনা লিংকৰ ঠাইত নিজৰ ক্লাছৰ লিংক দিয়ক।">Replace sample links with your own class links.</div></div>
+    <div class="panel">
+      <div class="lesson"><div><strong data-en="School Live Class" data-hi="स्कूल लाइव क्लास" data-as="বিদ্যালয়ৰ লাইভ ক্লাছ">School Live Class</strong><div class="muted" data-en="Join your teacher for school subjects." data-hi="स्कूल के विषयों के लिए शिक्षक से जुड़ें।" data-as="বিদ্যালয়ৰ বিষয়সমূহৰ বাবে শিক্ষকৰ সৈতে যোগ দিয়ক।">Join your teacher for school subjects.</div></div><a class="btn" href="https://meet.google.com/" target="_blank" rel="noopener" data-en="Open Google Meet" data-hi="Google Meet खोलें" data-as="Google Meet খোলক">Open Google Meet</a></div>
+      <div class="lesson"><div><strong data-en="Competitive Exam Class" data-hi="प्रतियोगी परीक्षा क्लास" data-as="প্ৰতিযোগিতামূলক পৰীক্ষাৰ ক্লাছ">Competitive Exam Class</strong><div class="muted" data-en="Join practice sessions and doubt clearing." data-hi="अभ्यास सत्र और सवालों के समाधान में जुड़ें।" data-as="অনুশীলন আৰু সন্দেহ দূৰ কৰাৰ শ্ৰেণীত যোগ দিয়ক।">Join practice sessions and doubt clearing.</div></div><a class="btn" href="https://meet.google.com/" target="_blank" rel="noopener" data-en="Open Google Meet" data-hi="Google Meet खोलें" data-as="Google Meet খোলক">Open Google Meet</a></div>
+      <div class="lesson"><div><strong data-en="Notes & Recorded Lessons" data-hi="नोट्स और रिकॉर्डेड पाठ" data-as="টোকা আৰু ৰেকৰ্ড কৰা পাঠ">Notes & Recorded Lessons</strong><div class="muted" data-en="Add links to PDFs, worksheets and recorded videos." data-hi="PDF, वर्कशीट और रिकॉर्डेड वीडियो के लिंक जोड़ें।" data-as="PDF, ৱৰ্কশ্বীট আৰু ৰেকৰ্ড কৰা ভিডিঅ'ৰ লিংক যোগ কৰক।">Add links to PDFs, worksheets and recorded videos.</div></div><a class="btn" href="#account" data-en="Student Area" data-hi="स्टूडेंट क्षेत्र" data-as="শিক্ষাৰ্থীৰ অংশ">Student Area</a></div>
+      <p class="muted small" data-en="The Meet buttons currently open the general Google Meet website. Add your real meeting URLs before sharing with students." data-hi="अभी Meet बटन Google Meet की सामान्य वेबसाइट खोलते हैं। विद्यार्थियों को लिंक देने से पहले अपनी मीटिंग के असली लिंक डालें।" data-as="বৰ্তমান Meet বুটামসমূহে Google Meet-ৰ সাধাৰণ ৱেবছাইট খোলে। শিক্ষাৰ্থীক দিয়াৰ আগতে প্ৰকৃত মিটিং লিংক যোগ কৰক।">The Meet buttons currently open the general Google Meet website. Add your real meeting URLs before sharing with students.</p>
+    </div>
+  </section>
+  <section style="margin-top:30px"><div class="panel"><h2 data-en="For Teachers / Admin" data-hi="शिक्षक / एडमिन के लिए" data-as="শিক্ষক / প্ৰশাসকৰ বাবে">For Teachers / Admin</h2><p class="muted" data-en="Create Google Meet sessions, replace the sample links in index.html, and upload the updated file. This starter does not yet include a protected admin dashboard, attendance, payments or quizzes." data-hi="Google Meet क्लास बनाएँ, index.html में नमूना लिंक बदलें और अपडेट की गई फ़ाइल अपलोड करें। इस शुरुआती वेबसाइट में अभी सुरक्षित एडमिन डैशबोर्ड, उपस्थिति, भुगतान या क्विज़ शामिल नहीं हैं।" data-as="Google Meet ক্লাছ সৃষ্টি কৰক, index.html-ত নমুনা লিংক সলনি কৰক আৰু আপডেট কৰা ফাইল আপলোড কৰক। এই প্ৰাৰম্ভিক ৱেবছাইটত এতিয়াও সুৰক্ষিত প্ৰশাসক ডেশ্বব'ৰ্ড, উপস্থিতি, পেমেণ্ট বা কুইজ নাই।">Create Google Meet sessions, replace the sample links in index.html, and upload the updated file. This starter does not yet include a protected admin dashboard, attendance, payments or quizzes.</p></div></section>
+</main>
+<footer><strong>Nur Online Learning</strong><br><span data-en="Learn today. Succeed tomorrow." data-hi="आज सीखें। कल सफल बनें।" data-as="আজি শিকক। কাইলৈ সফল হওক।">Learn today. Succeed tomorrow.</span><br><small>Free starter website · <span data-en="Replace with your contact details" data-hi="अपनी संपर्क जानकारी जोड़ें" data-as="নিজৰ যোগাযোগৰ তথ্য যোগ কৰক">Replace with your contact details</span></small></footer>
+
+<script>
+const translations = {en:"en",hi:"hi",as:"as"};
+const languageSelect = document.getElementById("language");
+function setLanguage(lang) {
+  document.documentElement.lang = lang === "hi" ? "hi" : lang === "as" ? "as" : "en";
+  document.querySelectorAll("[data-en]").forEach(el => {
+    const value = el.getAttribute("data-" + lang);
+    if (value !== null) el.textContent = value;
+  });
+  languageSelect.value = lang;
+  try { localStorage.setItem("nurLearningLanguage", lang); } catch {}
+}
+languageSelect.addEventListener("change", e => setLanguage(e.target.value));
+try { const saved = localStorage.getItem("nurLearningLanguage"); if (saved && translations[saved]) setLanguage(saved); } catch {}
+</script>
+
+<script type="module">
+/*
+  FIREBASE SETUP:
+  Create a Firebase project, enable Email/Password Authentication and Firestore,
+  then replace the placeholders below with your Firebase web app config.
+*/
+const firebaseConfig = {
+  apiKey: "PASTE_YOUR_FIREBASE_API_KEY",
+  authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
+  projectId: "PASTE_YOUR_PROJECT_ID",
+  appId: "PASTE_YOUR_FIREBASE_APP_ID"
+};
+const configured = firebaseConfig.apiKey !== "PASTE_YOUR_FIREBASE_API_KEY";
+const registerForm = document.getElementById("registerForm");
+const loginForm = document.getElementById("loginForm");
+const accountStatus = document.getElementById("accountStatus");
+const studentArea = document.getElementById("studentArea");
+const welcomeName = document.getElementById("welcomeName");
+function setupMessage() {
+  accountStatus.textContent = "Setup is not finished. Add your Firebase project settings by following README.txt.";
+}
+function friendlyError(err) {
+  const messages = {
+    "auth/email-already-in-use":"This email is already registered. Please log in.",
+    "auth/invalid-email":"Please enter a valid email address.",
+    "auth/weak-password":"Please use a stronger password (at least 6 characters).",
+    "auth/invalid-credential":"Email or password is incorrect.",
+    "auth/network-request-failed":"Network error. Check your internet connection."
+  };
+  return messages[err.code] || "Something went wrong. Please try again.";
+}
+if (!configured) {
+  setupMessage();
+  registerForm.addEventListener("submit", e => { e.preventDefault(); setupMessage(); });
+  loginForm.addEventListener("submit", e => { e.preventDefault(); setupMessage(); });
+} else {
+  try {
+    const appMod = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js");
+    const authMod = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js");
+    const dbMod = await import("https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js");
+    const app = appMod.initializeApp(firebaseConfig);
+    const auth = authMod.getAuth(app), db = dbMod.getFirestore(app);
+    const createUser = authMod.createUserWithEmailAndPassword, signIn = authMod.signInWithEmailAndPassword;
+    const signOutUser = authMod.signOut, watchAuth = authMod.onAuthStateChanged;
+    const doc = dbMod.doc, setDoc = dbMod.setDoc, getDoc = dbMod.getDoc;
+    registerForm.addEventListener("submit", async e => {
+      e.preventDefault();
+      const name = document.getElementById("regName").value.trim();
+      const email = document.getElementById("regEmail").value.trim();
+      const password = document.getElementById("regPassword").value;
+      try {
+        const credential = await createUser(auth, email, password);
+        await setDoc(doc(db, "students", credential.user.uid), {name, email, createdAt: new Date().toISOString()});
+        accountStatus.textContent = "Registration successful!";
+      } catch (err) { accountStatus.textContent = friendlyError(err); }
+    });
+    loginForm.addEventListener("submit", async e => {
+      e.preventDefault();
+      try { await signIn(auth, document.getElementById("loginEmail").value.trim(), document.getElementById("loginPassword").value); }
+      catch (err) { accountStatus.textContent = friendlyError(err); }
+    });
+    document.getElementById("logoutBtn").addEventListener("click", () => signOutUser(auth));
+    watchAuth(auth, async user => {
+      if (!user) { studentArea.classList.add("hidden"); accountStatus.textContent = "You are not signed in yet."; return; }
+      let name = user.email || "Student";
+      try { const snap = await getDoc(doc(db, "students", user.uid)); if (snap.exists() && snap.data().name) name = snap.data().name; } catch {}
+      welcomeName.textContent = "Welcome, " + name + "!";
+      studentArea.classList.remove("hidden"); accountStatus.textContent = "Signed in as " + user.email;
+    });
+  } catch (err) { accountStatus.textContent = "Could not connect to Firebase. Check your settings and internet connection."; }
+}
+</script>
+</body>
+</html>
